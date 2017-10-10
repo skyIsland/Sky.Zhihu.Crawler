@@ -29,23 +29,25 @@
         private void InitializeComponent()
         {
             this.grpParam = new System.Windows.Forms.GroupBox();
+            this.txtCookie = new System.Windows.Forms.TextBox();
+            this.lblCookie = new System.Windows.Forms.Label();
+            this.btnSaveSrc = new System.Windows.Forms.Button();
+            this.txtSaveSrc = new System.Windows.Forms.TextBox();
+            this.lblSaveSrc = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblSaveCount = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.grpLog = new System.Windows.Forms.GroupBox();
             this.LVLog = new System.Windows.Forms.ListView();
-            this.lblSaveCount = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblSaveSrc = new System.Windows.Forms.Label();
-            this.txtSaveSrc = new System.Windows.Forms.TextBox();
-            this.btnSaveSrc = new System.Windows.Forms.Button();
-            this.lblCookie = new System.Windows.Forms.Label();
-            this.txtCookie = new System.Windows.Forms.TextBox();
+            this.btnStart = new System.Windows.Forms.Button();
             this.grpParam.SuspendLayout();
             this.grpLog.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpParam
             // 
+            this.grpParam.Controls.Add(this.btnStart);
             this.grpParam.Controls.Add(this.txtCookie);
             this.grpParam.Controls.Add(this.lblCookie);
             this.grpParam.Controls.Add(this.btnSaveSrc);
@@ -61,6 +63,65 @@
             this.grpParam.TabIndex = 0;
             this.grpParam.TabStop = false;
             this.grpParam.Text = "参数配置";
+            // 
+            // txtCookie
+            // 
+            this.txtCookie.Location = new System.Drawing.Point(61, 51);
+            this.txtCookie.Name = "txtCookie";
+            this.txtCookie.Size = new System.Drawing.Size(356, 21);
+            this.txtCookie.TabIndex = 8;
+            // 
+            // lblCookie
+            // 
+            this.lblCookie.AutoSize = true;
+            this.lblCookie.Location = new System.Drawing.Point(9, 60);
+            this.lblCookie.Name = "lblCookie";
+            this.lblCookie.Size = new System.Drawing.Size(41, 12);
+            this.lblCookie.TabIndex = 7;
+            this.lblCookie.Text = "Cookie";
+            // 
+            // btnSaveSrc
+            // 
+            this.btnSaveSrc.Location = new System.Drawing.Point(197, 89);
+            this.btnSaveSrc.Name = "btnSaveSrc";
+            this.btnSaveSrc.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveSrc.TabIndex = 6;
+            this.btnSaveSrc.Text = "打开";
+            this.btnSaveSrc.UseVisualStyleBackColor = true;
+            // 
+            // txtSaveSrc
+            // 
+            this.txtSaveSrc.Location = new System.Drawing.Point(75, 89);
+            this.txtSaveSrc.Name = "txtSaveSrc";
+            this.txtSaveSrc.Size = new System.Drawing.Size(100, 21);
+            this.txtSaveSrc.TabIndex = 5;
+            // 
+            // lblSaveSrc
+            // 
+            this.lblSaveSrc.AutoSize = true;
+            this.lblSaveSrc.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSaveSrc.Location = new System.Drawing.Point(6, 96);
+            this.lblSaveSrc.Name = "lblSaveSrc";
+            this.lblSaveSrc.Size = new System.Drawing.Size(63, 14);
+            this.lblSaveSrc.TabIndex = 4;
+            this.lblSaveSrc.Text = "保存路径";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(317, 20);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 3;
+            // 
+            // lblSaveCount
+            // 
+            this.lblSaveCount.AutoSize = true;
+            this.lblSaveCount.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSaveCount.Location = new System.Drawing.Point(167, 27);
+            this.lblSaveCount.Name = "lblSaveCount";
+            this.lblSaveCount.Size = new System.Drawing.Size(147, 14);
+            this.lblSaveCount.TabIndex = 2;
+            this.lblSaveCount.Text = "一个文件夹多少张图片";
             // 
             // txtId
             // 
@@ -97,64 +158,14 @@
             this.LVLog.TabIndex = 0;
             this.LVLog.UseCompatibleStateImageBehavior = false;
             // 
-            // lblSaveCount
+            // btnStart
             // 
-            this.lblSaveCount.AutoSize = true;
-            this.lblSaveCount.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblSaveCount.Location = new System.Drawing.Point(167, 27);
-            this.lblSaveCount.Name = "lblSaveCount";
-            this.lblSaveCount.Size = new System.Drawing.Size(147, 14);
-            this.lblSaveCount.TabIndex = 2;
-            this.lblSaveCount.Text = "一个文件夹多少张图片";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(317, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 3;
-            // 
-            // lblSaveSrc
-            // 
-            this.lblSaveSrc.AutoSize = true;
-            this.lblSaveSrc.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblSaveSrc.Location = new System.Drawing.Point(6, 96);
-            this.lblSaveSrc.Name = "lblSaveSrc";
-            this.lblSaveSrc.Size = new System.Drawing.Size(63, 14);
-            this.lblSaveSrc.TabIndex = 4;
-            this.lblSaveSrc.Text = "保存路径";
-            // 
-            // txtSaveSrc
-            // 
-            this.txtSaveSrc.Location = new System.Drawing.Point(75, 89);
-            this.txtSaveSrc.Name = "txtSaveSrc";
-            this.txtSaveSrc.Size = new System.Drawing.Size(100, 21);
-            this.txtSaveSrc.TabIndex = 5;
-            // 
-            // btnSaveSrc
-            // 
-            this.btnSaveSrc.Location = new System.Drawing.Point(197, 89);
-            this.btnSaveSrc.Name = "btnSaveSrc";
-            this.btnSaveSrc.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveSrc.TabIndex = 6;
-            this.btnSaveSrc.Text = "打开";
-            this.btnSaveSrc.UseVisualStyleBackColor = true;
-            // 
-            // lblCookie
-            // 
-            this.lblCookie.AutoSize = true;
-            this.lblCookie.Location = new System.Drawing.Point(9, 60);
-            this.lblCookie.Name = "lblCookie";
-            this.lblCookie.Size = new System.Drawing.Size(41, 12);
-            this.lblCookie.TabIndex = 7;
-            this.lblCookie.Text = "Cookie";
-            // 
-            // txtCookie
-            // 
-            this.txtCookie.Location = new System.Drawing.Point(61, 51);
-            this.txtCookie.Name = "txtCookie";
-            this.txtCookie.Size = new System.Drawing.Size(356, 21);
-            this.txtCookie.TabIndex = 8;
+            this.btnStart.Location = new System.Drawing.Point(317, 89);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.TabIndex = 9;
+            this.btnStart.Text = "开始";
+            this.btnStart.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
@@ -187,6 +198,7 @@
         private System.Windows.Forms.Label lblSaveCount;
         private System.Windows.Forms.TextBox txtCookie;
         private System.Windows.Forms.Label lblCookie;
+        private System.Windows.Forms.Button btnStart;
     }
 }
 

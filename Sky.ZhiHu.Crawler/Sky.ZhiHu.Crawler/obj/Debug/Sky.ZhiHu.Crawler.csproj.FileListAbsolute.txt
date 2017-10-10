@@ -38,3 +38,4 @@ D:\Code\Sky.ZhiHu\Sky.Zhihu.Crawler\Sky.ZhiHu.Crawler\Sky.ZhiHu.Crawler\obj\Debu
 D:\Code\Sky.ZhiHu\Sky.Zhihu.Crawler\Sky.ZhiHu.Crawler\Sky.ZhiHu.Crawler\obj\Debug\Sky.ZhiHu.Crawler.application
 D:\Code\Sky.ZhiHu\Sky.Zhihu.Crawler\Sky.ZhiHu.Crawler\Sky.ZhiHu.Crawler\obj\Debug\Sky.ZhiHu.Crawler.exe
 D:\Code\Sky.ZhiHu\Sky.Zhihu.Crawler\Sky.ZhiHu.Crawler\Sky.ZhiHu.Crawler\obj\Debug\Sky.ZhiHu.Crawler.pdb
+D:\Project\Study\result\Crawler\Sky.ZhiHu.Crawler\Sky.ZhiHu.Crawler\bin\Debug\Sky.ZhiHu.Crawler.exe.config
