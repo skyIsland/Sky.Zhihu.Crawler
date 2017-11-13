@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sky.ZhiHu.Crawler", "Sky.ZhiHu.Crawler\Sky.ZhiHu.Crawler.csproj", "{7091760A-516C-4788-81AB-2310C6F05C99}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sky.Zhihu.NewCrawler", "Sky.Zhihu.NewCrawler\Sky.Zhihu.NewCrawler.csproj", "{82F440CE-F2A4-4A2F-851B-5BA9A44DAD2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sky.ZhiHuImage.Crawler", "Sky.ZhiHuImage.Crawler\Sky.ZhiHuImage.Crawler.csproj", "{FCC99246-D70C-47AA-9537-5BAEE12E15DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7091760A-516C-4788-81AB-2310C6F05C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7091760A-516C-4788-81AB-2310C6F05C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7091760A-516C-4788-81AB-2310C6F05C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7091760A-516C-4788-81AB-2310C6F05C99}.Release|Any CPU.Build.0 = Release|Any CPU
-		{82F440CE-F2A4-4A2F-851B-5BA9A44DAD2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{82F440CE-F2A4-4A2F-851B-5BA9A44DAD2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{82F440CE-F2A4-4A2F-851B-5BA9A44DAD2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{82F440CE-F2A4-4A2F-851B-5BA9A44DAD2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC99246-D70C-47AA-9537-5BAEE12E15DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC99246-D70C-47AA-9537-5BAEE12E15DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC99246-D70C-47AA-9537-5BAEE12E15DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC99246-D70C-47AA-9537-5BAEE12E15DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
