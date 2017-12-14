@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tables Version="9.6.6557.38337" NameSpace="Sky.ZhiHuImage.Crawler.Models" ConnName="Conn" Output="../Models" BaseClass="Entity">
+  <Table Name="FilesInfo" Description="文件信息" DbType="SQLite">
+    <Columns>
+      <Column Name="ID" DataType="Int32" Identity="True" PrimaryKey="True" Description="编号" Primary="true" />
+      <Column Name="Name" DataType="String" Master="True" Description="名称" />
+      <Column Name="CreateTime" DataType="DateTime" Description="创建时间" />
+      <Column Name="InfoID" DataType="String" Description="唯一ID" />
+      <Column Name="FilePath" DataType="String" Description="文件路径" />
+    </Columns>
+  </Table>
+</Tables>

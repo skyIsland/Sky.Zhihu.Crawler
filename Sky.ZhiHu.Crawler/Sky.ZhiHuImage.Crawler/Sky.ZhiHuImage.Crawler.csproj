@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>E:\Study\知乎\</OutputPath>
+    <OutputPath>..\..\Bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -35,19 +35,18 @@
   <ItemGroup>
     <Reference Include="Ivony.Core, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Ivony.Core.1.1.1\lib\Ivony.Core.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Ivony.Html, Version=3.0.12.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Jumony.Core.3.0.18\lib\Ivony.Html.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Ivony.Html.Parser, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Jumony.Core.3.0.18\lib\Ivony.Html.Parser.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Ivony.Html.Parser.Regulars, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Jumony.Core.3.0.18\lib\Ivony.Html.Parser.Regulars.dll</HintPath>
-      <Private>True</Private>
+    </Reference>
+    <Reference Include="NewLife.Core">
+      <HintPath>..\DLL\NewLife.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,20 +58,43 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="XCode">
+      <HintPath>..\DLL\XCode.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helper\HttpHelper.cs" />
     <Compile Include="Helper\JsonHelper.cs" />
+    <Compile Include="Helper\Util.cs" />
     <Compile Include="Models\DownParameter.cs" />
     <Compile Include="Models\ResultInfo.cs" />
     <Compile Include="Models\ZhiHuPager.cs" />
+    <Compile Include="Models\文件信息.Biz.cs" />
+    <Compile Include="Models\文件信息.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Demo\生成实体类.log">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>生成实体类.tt</DependentUpon>
+    </None>
     <None Include="Helper\Setting.json" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Demo\Demo.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Demo\生成实体类.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>生成实体类.log</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
