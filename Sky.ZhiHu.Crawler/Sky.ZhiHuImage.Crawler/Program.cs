@@ -169,18 +169,19 @@ namespace Sky.ZhiHuImage.Crawler
                 #region 检测图片是否已存在
                 var md5 = Util.GetFileMd5(fileName);
                 var oldData = FilesInfo.FindByInfoId(md5);
-                if (oldData.Count > 0)
+                if (oldData.Count==0)
                 {
-                    File.Delete(fileName);
+                    // File.Delete(fileName);
                     //throw new Exception("文件已存在,图片路径:" + oldData.FirstOrDefault().FilePath);
+                    var model = new FilesInfo();
+                    model.FilePath = filePath;
+                    model.InfoID = md5;
+                    model.Name = Path.GetFileName(url);
+                    model.CreateTime = DateTime.Now;
+                    model.Save();
                 }
                 #endregion
-                var model = new FilesInfo();
-                model.FilePath = filePath;
-                model.InfoID = md5;
-                model.Name = Path.GetFileName(url);
-                model.CreateTime = DateTime.Now;
-                model.Save();
+                
             }
          
         }
