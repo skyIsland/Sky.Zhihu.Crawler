@@ -85,7 +85,7 @@ namespace Sky.ZhiHuImage.Crawler
             Console.WriteLine("===============================================");
             Console.WriteLine("开始下载图片,问题题目:" + questionTitle + ",预计下载图片数量：" + urls.Count);
             #region 开线程下载图片 100个链接开一个线程
-            var threadCount = urls.Count % 2 == 0 ? urls.Count / 100 : urls.Count / 100 + 1;
+            var threadCount = (int)Math.Ceiling((double) urls.Count / 100);  
             Task[] tasks = new Task[threadCount];
             for (int i = 0; i < threadCount; i++)
             {
